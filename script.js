@@ -1,6 +1,6 @@
-var lastName = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
+var lastName = ['BIANCHI', 'NERI', 'ROSSI', 'VERDI', 'GIALLI'];
 
-var userName = prompt('Inserisci Cognome');
+var userName = (prompt('Inserisci Cognome')).toUpperCase();
 lastName.push(userName);
 lastName.sort();
 
