@@ -1,6 +1,7 @@
 var lastName = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
 
-lastName.push(prompt('Inserisci Cognome'));
+var userName = prompt('Inserisci Cognome');
+lastName.push(userName);
 lastName.sort();
 
 x = 0;
@@ -9,4 +10,5 @@ while (x < lastName.length) {
     x++;
 }
 
-// document.getElementById('position').innerHTML = "Il tuo cognome si trova nella posizione n°: " + ;
+var namePosition = lastName.indexOf(userName) + 1;
+document.getElementById('position').innerHTML = "Il tuo cognome si trova nella posizione n°: " + namePosition;
